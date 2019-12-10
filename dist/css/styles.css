@@ -1,0 +1,111 @@
+:root {
+  --light-blue: #0791e6;
+  --dark--blue: #1f526f;
+  --light-green: #82d02c;
+  --soft-gray: #f6f8f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.container {
+  width: 720px;
+  height: 100vh; 
+  position: absolute;
+  top: 50px;
+  left: calc(50% - (689px / 2));
+}
+
+.container__header {
+  width: 100%;
+  height: 80px;
+  padding-top: 1.2rem;
+  text-align: center;
+  color: var(--light-blue);
+  border-bottom: 2px solid var(--dark--blue);
+}
+
+.container__table {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container__table thead {
+  background-color: var(--soft-gray);
+}
+
+.container__table thead > tr > th {
+  width: 260px;
+  height: 50px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.container__table tbody > tr > td {
+  height: 40px;
+}
+
+.container__table tfoot > tr > td{
+  height: 60px;
+  background-color: var(--dark--blue);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.container__form {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-gray);
+}
+
+.container__form--input input {
+  width: 130px;
+  height: 40px;
+  margin: 0 10px;
+  padding-left: 10px;
+}
+
+.add {
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-green);
+  border: none;
+  border-radius: 5px;
+  color: var(--soft-gray);
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn {
+  width: 32px;
+  height: 32px;
+  background: url('../assets/delete-icon.svg') no-repeat center center/cover;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.is-invalid {
+  border: 2px solid red;
+}
